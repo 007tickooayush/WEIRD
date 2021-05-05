@@ -14,11 +14,15 @@ html,body{
     --Abel: 'Abel',cursive;
     --Montserrat: 'Montserrat',cursive;
     --Roboto: 'Roboto',cursive;
+
+    /* Theme colors */
+    --text-gray: #3f4954;
 }
 /* variables end */
 /*  ----------------------- global classes ----------------------- */
 a{
     text-decoration: none;
+    color: var(--text-gray);
 }
 
 .flex-row{
