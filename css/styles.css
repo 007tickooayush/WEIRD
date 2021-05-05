@@ -1,0 +1,60 @@
+/* importing all the fonts from font.css */
+@import url('../css/fonts.css');
+
+/* preventing browser from overriding settings */
+html,body{
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+/*  ----------------------- global classes ----------------------- */
+a{
+    text-decoration: none;
+}
+
+.flex-row{
+    display: flex;
+    direction: row;
+    flex-wrap: wrap;
+}
+
+
+ul{
+    list-style-type: none;
+}
+/*  ----------------------- global classes end ----------------------- */
+
+/*  ----------------------- navbar ----------------------- */
+.nav{
+    background: white;
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 10vh;
+    overflow: hidden;
+}
+
+.nav .nav-menu{
+    justify-content: space-between;
+}
+
+.nav .nav-items{
+    display: flex;
+    margin: 0;
+}
+
+.nav .nav-items .nav-link{
+    padding: 1.6rem 1rem;
+    font-size: 1rem 0;
+}
+
+.nav .social{
+    padding: 1.4rem 0;
+
+}
+
+.nav .nav-brand a{
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    display: block;
+}
+/*  ----------------------- navbar closed ----------------------- */

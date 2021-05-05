@@ -1,0 +1,17 @@
+/* font-family: Abel  */
+@font-face {
+    font-family: Abel;
+    src: url('../fonts/Abel/Abel-Regular.ttf');
+}
+
+/* font-family: Montserrat Light */
+@font-face {
+    font-family: MontSerrat;
+    src: url('../fonts/Montserrat_Alternates/MontserratAlternates-Light.ttf');
+}
+
+/* font-family: Roboto Slab */
+@font-face {
+    font-family: Roboto;
+    src: url('../fonts/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf');
+}
