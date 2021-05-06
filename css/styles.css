@@ -17,6 +17,14 @@ html,body{
 
     /* Theme colors */
     --text-gray: #3f4954;
+    --text-light: #686668da;
+    --bg-color: #0f0f0f;
+    --white: #fff;
+    --midnight: #104f55;
+
+    /* gradient colors */
+    --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+
 }
 /* variables end */
 /*  ----------------------- global classes ----------------------- */
@@ -57,18 +65,45 @@ ul{
 
 .nav .nav-items .nav-link{
     padding: 1.6rem 1rem;
-    font-size: 1rem 0;
+    font-family: var(--Abel);
+    font-size: 1.1rem ;
+}
+
+.nav .nav-items .nav-link:hover{
+    background-color: var(--midnight);
+}
+
+.nav .nav-items .nav-link:hover a{
+    color: var(--white);
 }
 
 .nav .social{
     padding: 1.4rem 0;
+}
 
+.nav .social i{
+    padding: 0 .2rem;
+}
+
+.nav .social i:hover{
+    color:#a1c4cf;
 }
 
 .nav .nav-brand a{
     font-size: 1.6rem;
     padding: 1rem 0;
     display: block;
-    font-family: var(--Abel);
+    font-family: var(--Roboto);
+    font-size: 1.6rem;
 }
 /*  ----------------------- navbar closed ----------------------- */
+
+/*  ----------------------- viewport <= 750px ----------------------- */
+
+@media only screen and (max-width: 750px){
+    .nav .nav-menu, .nav .nav-items{
+        flex-direction: column;
+    }
+}
+
+/*  ----------------------- viewport <= 750px end ----------------------- */
