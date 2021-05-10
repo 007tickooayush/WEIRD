@@ -75,6 +75,15 @@ span{
 .container{
     margin: 0 5vw;
 }
+
+.text-gray{
+    color: var(--text-gray);
+}
+
+p{
+    font-family: var(--Montserrat);
+    color: var(--text-light);
+}
 /*  ----------------------- global classes end ----------------------- */
 
 /*  ----------------------- navbar ----------------------- */
@@ -256,7 +265,65 @@ section .container .owl-nav{
 } */
 /* ----------------------- Blog carousel end----------------------- */
 
-/*  ----------------------- Main content end----------------------- */
+/* ---------------------- site content ---------------------- */
+
+main .site-content{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+main .post-content{
+    margin-bottom: 5rem;
+    width: 100%;
+}
+
+/* ' > ' for targetting the descendent view item  */
+main .site-content .post-content >.post-image, .post-title{
+    padding: 1rem 2rem;
+    position: relative;
+}
+
+/* for styling the post basic info part */
+main .site-content .post-content > .post-image .post-info{
+    background: var(--sky);
+    padding: 1rem;
+    position: absolute;
+    bottom: 0%;
+    left: 20vw;
+    border-radius: 3rem;
+}
+
+main .site-content .post-content > .post-image > div{
+    overflow: hidden;
+}
+
+main .site-content .post-content > .post-image .img{
+    width: 100%;
+    transition: all 1s ease;
+}
+
+main .site-content .post-content > .post-image .img:hover{
+    transform: scale(1.3);
+}
+
+/* for adding space between comments and date in info and span */
+main .site-content .post-content > .post-image .post-info span{
+    margin : 0.5rem;
+}
+
+main .post-content .post-title a{
+    font-family: var(--Roboto);
+    font-size: 1.5rem;
+}
+
+.site-content .post-content .post-title .post-btn{
+    border-radius: 0;
+    padding: 0.7rem 1.5rem;
+    background: var(--sky);
+}
+/* ---------------------- site content end---------------------- */
+
+/* ---------------------- Main content end----------------------- */
 
 /*  ----------------------- viewport <= 750px ----------------------- */
 
