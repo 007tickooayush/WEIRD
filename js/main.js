@@ -1,6 +1,8 @@
+// noinspection JSUnresolvedFunction
+
 $(document).ready(function(){
-    $nav = $('.nav') ;
-    $toggleCollapse = $('.toggle-collapse');
+    let $nav = $('.nav');
+    let $toggleCollapse = $('.toggle-collapse');
 
     // click event on toggle menu;
     $toggleCollapse.click(function () {
